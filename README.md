@@ -67,7 +67,7 @@ To run the frontend locally, follow these steps:
 ## Usage
 
 The application will be available at `http://localhost:3000`. You can navigate through different sections to explore my portfolio:
-- http://localhost:3000/
+
 - Home: Introduction and overview
 - Experience: Professional and educational background
 - Projects: Showcase of my work
@@ -75,7 +75,11 @@ The application will be available at `http://localhost:3000`. You can navigate t
 
 ## Deployment
 
-The frontend is deployed on Vercel. To deploy your own version:
+The frontend is deployed live on: [https://meantilokeshwar.netlify.app/](https://meantilokeshwar.netlify.app/)
+
+To deploy your own version:
+
+### Vercel
 
 1. Push your code to a GitHub repository
 2. Connect your repository to Vercel
@@ -84,6 +88,26 @@ The frontend is deployed on Vercel. To deploy your own version:
    - Output Directory: `build`
 4. Set the environment variable `REACT_APP_API_URL` to your backend URL
 5. Deploy!
+
+### Netlify
+
+To deploy on Netlify:
+
+1. Push your code to a GitHub repository (ensure `netlify.toml` in the project root is included)
+2. Sign up on Netlify and select "New site from Git"
+3. Choose your repository
+4. Netlify should automatically detect the settings from `netlify.toml`:
+   - Base directory: `portfolio-frontend`
+   - Build command: `npm run build`
+   - Publish directory: `build`
+5. If automatic detection fails, manually set:
+   - Base directory: `portfolio-frontend`
+   - Build command: `npm run build`
+   - Publish directory: `build`
+6. Set `REACT_APP_API_URL` in "Site settings > Build & deploy > Environment > Environment variables"
+7. Click "Deploy site"
+
+Note: A `netlify.toml` file is included in the root to handle configuration and client-side routing.
 
 ## Contact
 
@@ -94,4 +118,3 @@ If you have any questions, feel free to reach out to me:
 - GitHub: Lokeshwar Menati
 
 Thank you for visiting my portfolio website!
-
