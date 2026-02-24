@@ -67,7 +67,7 @@ To run the frontend locally, follow these steps:
 ## Usage
 
 The application will be available at `http://localhost:3000`. You can navigate through different sections to explore my portfolio:
-
+- http://localhost:3000/
 - Home: Introduction and overview
 - Experience: Professional and educational background
 - Projects: Showcase of my work
@@ -94,3 +94,4 @@ If you have any questions, feel free to reach out to me:
 - GitHub: Lokeshwar Menati
 
 Thank you for visiting my portfolio website!
+
